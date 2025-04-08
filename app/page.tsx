@@ -20,7 +20,7 @@ export default function Home() {
       return;
     }
     mutate(
-      { inputText: 'hello', selectedLanguage: 'ko' },
+      { inputText: inputText, selectedLanguage: selectedLanguage },
       // {
       //   onSuccess: () => {
       //     console.timeEnd('translate-api')

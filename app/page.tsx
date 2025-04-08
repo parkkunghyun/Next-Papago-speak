@@ -17,7 +17,6 @@ export default function Home() {
 
   const handleTranslate = () => {
     if (!inputText.trim()) { 
-      toast.warn("번역할 단어나 문장을 입력해주세요!");
       return;
   }
 

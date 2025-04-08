@@ -21,14 +21,14 @@ export default function Home() {
     }
     mutate(
       { inputText: 'hello', selectedLanguage: 'ko' },
-      {
-        onSuccess: () => {
-          console.timeEnd('translate-api')
-        },
-        onError: () => {
-          console.timeEnd('translate-api')
-        },
-      }
+      // {
+      //   onSuccess: () => {
+      //     console.timeEnd('translate-api')
+      //   },
+      //   onError: () => {
+      //     console.timeEnd('translate-api')
+      //   },
+      // }
     )
   }
   console.log(data, selectedLanguage);

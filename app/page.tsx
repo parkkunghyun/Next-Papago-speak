@@ -18,9 +18,18 @@ export default function Home() {
   const handleTranslate = () => {
     if (!inputText.trim()) { 
       return;
-  }
-
-  mutate({ inputText, selectedLanguage });
+    }
+    mutate(
+      { inputText: 'hello', selectedLanguage: 'ko' },
+      {
+        onSuccess: () => {
+          console.timeEnd('translate-api')
+        },
+        onError: () => {
+          console.timeEnd('translate-api')
+        },
+      }
+    )
   }
   console.log(data, selectedLanguage);
 

@@ -27,7 +27,7 @@ jobs:
       - name: Deploy to Cloud Run
         run: |
           gcloud run deploy next-papago-speak \
-            --image us-central1-docker.pkg.dev/gcp-project-452602/papago-image/goat-speak:latest \
+            --image us-central1-docker.pkg.dev/gcp-project-452602/papago-image/next-goat-image:latest \
             --platform managed \
             --region us-central1 \
             --allow-unauthenticated \
